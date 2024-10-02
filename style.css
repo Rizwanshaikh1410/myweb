@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+}
+
+.signup h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+}
+
+.signup h1 span {
+    color: #6a11cb;
+}
+
+.signup p {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.signup label {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.signup input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.signup input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0px 0px 5px rgba(106, 17, 203, 0.3);
+}
+
+.signup .button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup button {
+    width: 48%;
+    padding: 12px;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup button:hover {
+    background-color: #2575fc;
+}
+
+.signup .footer {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+}
+
+.signup .footer a {
+    color: #2575fc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup .footer a:hover {
+    color: #6a11cb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .signup {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    .signup h1 {
+        font-size: 28px;
+    }
+
+    .signup input {
+        font-size: 14px;
+    }
+
+    .signup button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .button-row {
+        flex-direction: column;
+    }
+}
+
+/* Hindi Support */
+body::before {
+    content: "";
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
